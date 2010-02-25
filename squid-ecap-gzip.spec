@@ -7,7 +7,7 @@ Group:		Networking/Other
 URL:		http://code.google.com/p/squid-ecap-gzip/
 Source0:	http://squid-ecap-gzip.googlecode.com/files/squid-ecap-gzip-%{version}.tar.gz
 BuildRequires:	ecap-devel
-BuildRequires:	zlib1-deve
+BuildRequires:	zlib1-devel
 Buildroot:	%{_tmppath}/%{rname}-%{version}-%{release}-buildroot
 
 %description
