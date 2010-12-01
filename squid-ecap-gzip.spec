@@ -1,13 +1,13 @@
 Summary:	Squid-Gzip compresion on the fly
 Name:		squid-ecap-gzip
 Version:	1.2.0
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv2+
 Group:		Networking/Other
 URL:		http://code.google.com/p/squid-ecap-gzip/
 Source0:	http://squid-ecap-gzip.googlecode.com/files/squid-ecap-gzip-%{version}.tar.gz
 BuildRequires:	ecap-devel
-BuildRequires:	zlib1-devel
+BuildRequires:	zlib-devel
 Buildroot:	%{_tmppath}/%{rname}-%{version}-%{release}-buildroot
 
 %description
@@ -18,12 +18,14 @@ company specialised on Web content delivery, is now proud of offering the first 
 providing GZIP content-encoding / HTTP compression for SQUID.
 
 %prep
-
 %setup -n squid-ecap-gzip
 
+%build
 %configure2_5x 
 %make
 
+%install
+rm -rf %{buildroot}
 %makeinstall_std
 
 %clean
@@ -32,4 +34,3 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %{_libdir}/ecap_adapter_*
-
