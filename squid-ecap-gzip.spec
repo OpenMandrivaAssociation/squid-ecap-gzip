@@ -1,7 +1,7 @@
 Summary:	Squid-Gzip compresion on the fly
 Name:		squid-ecap-gzip
-Version:	1.2.0
-Release:	%mkrel 3
+Version:	1.3.0
+Release:	%mkrel 1
 License:	GPLv2+
 Group:		Networking/Other
 URL:		http://code.google.com/p/squid-ecap-gzip/
