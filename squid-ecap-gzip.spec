@@ -1,7 +1,7 @@
 Summary:	Squid-Gzip compresion on the fly
 Name:		squid-ecap-gzip
 Version:	1.3.0
-Release:	%mkrel 1
+Release:	%mkrel 2
 License:	GPLv2+
 Group:		Networking/Other
 URL:		http://code.google.com/p/squid-ecap-gzip/
@@ -13,9 +13,8 @@ Buildroot:	%{_tmppath}/%{rname}-%{version}-%{release}-buildroot
 %description
 For years, there is a huge demand for a HTTP compression feature of the popular SQUID proxy 
 cache. With SQUID 3.1, the eCAP feature was introduced to support third-party modules for content 
-adaption, which was earlier performed by the ICAP protocol. VIGOS, a Germany-based software 
-company specialised on Web content delivery, is now proud of offering the first eCAP adapter 
-providing GZIP content-encoding / HTTP compression for SQUID.
+adaption, which was earlier performed by the ICAP protocol. This package provides 
+GZIP content-encoding / HTTP compression for SQUID.
 
 %prep
 %setup -n squid-ecap-gzip
