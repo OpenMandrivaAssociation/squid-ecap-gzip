@@ -4,7 +4,7 @@ Version:	1.3.0
 Release:	%mkrel 2
 License:	GPLv2+
 Group:		Networking/Other
-URL:		http://code.google.com/p/squid-ecap-gzip/
+URL:		https://code.google.com/p/squid-ecap-gzip/
 Source0:	http://squid-ecap-gzip.googlecode.com/files/squid-ecap-gzip-%{version}.tar.gz
 BuildRequires:	ecap-devel
 BuildRequires:	zlib-devel
